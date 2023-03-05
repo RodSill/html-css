@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.384);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a> para aprender a programar</p><br>
+    
+    <p>Acessando o site do 
+        <!-- Tamanho padrão é 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="no">
+            <a href="https://www.cursoemvideo.com" target="_blank">Cursoemvideo</a>
+        </iframe>
+        <!-- O scolling é para tirar ou colocar a barra de rolagem, mas ela só funciona em alguns navegadores-->
+        <!-- As informações do CSS são prioridade em iframes.-->
+        
+    para aprender a programar</p>
+
+    <p>O site do 
+        
+        <iframe src="https://www.google.com" frameborder="0"></iframe> 
+
+    também é muito legal, pena que não funciona dentro do iframe!</p> <br>
+    <!-- Alguns sites usam sistema de proteção para evitar o iframe, ex: google.-->
+
+    <p>O repositório do Guanabara 
+        
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+            no GitHub <a href="https://gustavoguanabara.github.io" target="_blank"> </a>    
+        </iframe>
+        
+        
+    também é bem legal!</p>
+</body>
+</html>
