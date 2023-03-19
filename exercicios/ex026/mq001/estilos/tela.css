@@ -35,5 +35,8 @@ article{
     width: 600px;
     display: block;
     margin: auto;
+}
+p {
     text-align: justify;
+    text-indent: 15px;
 }
